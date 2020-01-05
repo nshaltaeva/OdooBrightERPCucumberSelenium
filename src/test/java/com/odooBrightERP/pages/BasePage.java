@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 //so we can keep them here
 public class BasePage {
 
-    int nurzat = 24; //demo
+
 
     @FindBy(css = "div[class='loader-mask shown']")
     public WebElement loaderMask;
@@ -137,6 +137,11 @@ public class BasePage {
 
     public void waitForPageSubTitle(String pageSubtitleText) {
         new WebDriverWait(Driver.get(), 10).until(ExpectedConditions.textToBe(By.cssSelector("h1[class='oro-subtitle']"), pageSubtitleText));
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Hello world");
+
     }
 
 }
