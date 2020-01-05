@@ -20,6 +20,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 //so we can keep them here
 public class BasePage {
 
+    int nurzat = 24; //demo
+
     @FindBy(css = "div[class='loader-mask shown']")
     public WebElement loaderMask;
 
